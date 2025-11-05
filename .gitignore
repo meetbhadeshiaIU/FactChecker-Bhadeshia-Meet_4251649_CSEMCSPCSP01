@@ -1,5 +1,5 @@
 #ignoring venv folder
-src/ai_model/venv
+src/ai_model/venv/
 
 # Logs
 logs
