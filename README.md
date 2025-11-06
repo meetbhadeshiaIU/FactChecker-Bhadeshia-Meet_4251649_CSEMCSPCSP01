@@ -10,7 +10,13 @@ report the news differently, which fits their propoganda.
 A user should get to know if the news he is asking, is correct or not.
 
 ## Tech Stack
-NextJS, ExpressJS, Python.
+VanillaJS, Python.
 
 ## Phase status (e.g., "Conception Phase", "Development Phase", "Finalisation Phase")
-Conception Phase
+Development Phase
+
+## Risks
+| Type | Description | Likelihood | Impact | Mitigation
+|-----------|-----------|-----------|-----------|-----------|
+| Resource    | Resource being copyrighted | High | High | Use publically available api  |
+| Technical  | Ai model giving False news  | Low  | high | Fintune the model more |
