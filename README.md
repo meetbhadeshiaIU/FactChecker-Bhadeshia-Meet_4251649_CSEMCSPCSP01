@@ -18,5 +18,7 @@ Development Phase
 ## Risks
 | Type | Description | Likelihood | Impact | Mitigation
 |-----------|-----------|-----------|-----------|-----------|
-| Resource    | Resource being copyrighted | High | High | Use publically available api  |
-| Technical  | Ai model giving False news  | Low  | high | Fintune the model more |
+| Resource  | Resource being copyrighted | High | High | Use publically available api  |
+| Technical | Ai model giving False news | Low | High | Fintune the model more |
+
+## 
