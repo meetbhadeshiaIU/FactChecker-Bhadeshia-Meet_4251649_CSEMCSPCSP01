@@ -20,5 +20,3 @@ Development Phase
 |-----------|-----------|-----------|-----------|-----------|
 | Resource  | Resource being copyrighted | High | High | Use publically available api  |
 | Technical | Ai model giving False news | Low | High | Fintune the model more |
-
-## 
