@@ -1,10 +1,12 @@
 ## Project TItle
 Fact Checker
 
-## Problem Statement/Abstract
-A prompt based website to fact check news.In today’s world, there are many fake news spreading. We need a website that can tell the difference between fake and real. Countries shatter and get destroyed by a fake news. Fake news can affect a person’s decision of voting. It can create communal tensions between two
-groups. There are two sides of one coin, same is for a news we see. Two news channels
-report the news differently, which fits their propoganda.
+## Problem Statement
+In an era where digital information spreads at unprecedented speed, the rise of fake news has become a critical global concern. Misinformation can manipulate public opinion, influence voting behavior, incite communal tensions, and destabilize societies. With multiple news outlets often presenting biased or conflicting perspectives, identifying accurate and unbiased information has become increasingly challenging for the general public.
+
+This project proposes the development of a prompt-based fact-checking website designed to help users quickly evaluate the credibility of news content. By leveraging natural language processing, reliable data sources, and automated verification techniques, the platform analyzes user-submitted text and identifies potential misinformation. The system highlights inconsistencies, provides context from trusted sources, and offers an objective assessment of the news item’s authenticity.
+
+The goal of this project is to empower individuals with a practical tool that encourages informed decision-making and promotes media literacy. By helping users distinguish truth from misinformation, the platform contributes to a safer, more transparent, and more resilient information ecosystem.
 
 ## Goals/Requirements
 A user should get to know if the news he is asking, is correct or not.
@@ -12,8 +14,8 @@ A user should get to know if the news he is asking, is correct or not.
 ## Tech Stack
 VanillaJS, Python.
 
-## Phase status (e.g., "Conception Phase", "Development Phase", "Finalisation Phase")
-Development Phase
+## Phase status
+Finalisation Phase
 
 ## Risks
 | Type | Description | Likelihood | Impact | Mitigation
