@@ -91,20 +91,6 @@ The goal of this project is to empower individuals with a practical tool that en
 
 * This decoupling allows the UI and backend to evolve independently.
 
-## Installation and Setup
-### Prerequisites
-```
-sentence-transformers             # our model's library
-fastapi                           # api library                             
-uvicorn                           # for continuously running our server
-```
-
-### Quick Start
-1. **Clone the repository**
-1. **Install dependencies**: ```pip install -r src/requirements.txt```
-1. **Run the backend** from root: python src/ai\ model/main.py
-1. **Start the frontend** from src/frontend/index.html
-
 ## Folder Structure
 ```
 
@@ -125,8 +111,60 @@ uvicorn                           # for continuously running our server
 └── README.md
 ```
 
-## Usage
-Home page will open chat based interface, enter the question in the prompt and press on arrow button to ask if the news is fake or not, then it will give the results.
+## Installation and Setup
+### Prerequisites
+```
+sentence-transformers             # our model's library
+fastapi                           # api library                             
+uvicorn                           # for continuously running our server
+```
+
+### Quick Start
+1. **Clone the repository**
+1. **Install dependencies**: ```pip install -r src/requirements.txt```
+1. **Run the backend** from root: python src/ai\ model/main.py
+1. **Start the frontend** from src/frontend/index.html
+
+# **About the Model: `all-mpnet-base-v2`**
+
+`all-mpnet-base-v2` is a **Sentence Transformer** model created by **Microsoft** and fine-tuned by the SentenceTransformers team. It is one of the highest-performing general-purpose semantic similarity models.
+
+## **Key Points**
+- Built on **MPNet (Masked and Permuted Pre-training for Language Understanding)** architecture.  
+- Produces **high-quality sentence embeddings** ideal for tasks like:  
+  - Semantic similarity  
+  - Text matching  
+  - Clustering  
+  - Information retrieval  
+- Embedding size: **768 dimensions**  
+- Average speed: **fast**, optimized for CPU and GPU usage.  
+- Known for **state-of-the-art performance** on STS (Semantic Textual Similarity) benchmarks.
+
+---
+
+# **Minimum System Requirements**
+
+This model is **lightweight** and runs on almost any modern machine.
+
+## **Minimum Requirements (CPU Only)**
+- **RAM:** 4 GB (8 GB recommended for larger batches)  
+- **CPU:** Any modern dual-core processor  
+- **Storage:** ~500 MB (model + dependencies)  
+- **OS:** Windows, macOS, or Linux  
+- **Python:** 3.8 or higher  
+
+> Running on CPU is fully possible, just slower for large workloads.
+
+## **Recommended Requirements (For Faster Performance)**
+To achieve fast embedding generation:
+
+- **RAM:** 8–16 GB  
+- **GPU:**  
+  - NVIDIA GPU with **4 GB VRAM** or more  
+  - CUDA 11+  
+- **Installation:** `torch` with CUDA support  
+
+> With a GPU, embedding generation becomes **10–50x faster**.
 
 ## Goals
 ### **Functional Requirements**
@@ -185,7 +223,6 @@ Therefore:
 - **Explanations or confidence scores** may be provided to help users understand uncertainty  
 
 
-
 ## Phase status
 Finalisation Phase
 
@@ -230,45 +267,9 @@ The system determines the authenticity of the news as follows:
 
 This rule-based classification, driven by the model’s output, forms the core decision-making mechanism of the project.
 
-
-### **Future Work**
-
-The current system provides a strong foundation for detecting misinformation using semantic NLP techniques. However, several enhancements can significantly improve its accuracy, usability, and real-world applicability. The following points outline potential directions for future development.
-
-#### **1. Integration of a News API**
-
-A major improvement for the system would be integrating a **News API** to automatically fetch the latest verified articles from reputable news outlets.  
-This addition would allow the system to:
-
-- Continuously update its reference database with fresh, credible information.  
-- Compare user-submitted news against real-time news content from trusted sources.  
-- Reduce dependency on manually stored or static datasets.  
-
-Incorporating a News API enhances the system's ability to stay relevant in an environment where new information emerges rapidly.
-
-#### **2. Providing Sources for Fact-Checked News**
-
-To increase transparency and user trust, the system can be expanded to **display the sources used for verification**.  
-This means that after evaluating a news text, the tool would also:
-
-- List the factual articles, reports, or documents that supported the classification.  
-- Provide direct links or summaries from those sources.  
-- Offer users a clearer understanding of *why* a particular news item was marked as fake or correct.  
-
-This improvement transforms the system from simply a classifier into a **traceable and explainable fact-checking assistant**.
-
-#### **3. Teaching users to how to detect fake news**
- 
-- Provide tailored explanations such as *“Health misinformation often uses exaggerated claims”* or *“Political fake news may manipulate statistics.”*  
-
-This enhancement makes the tool more versatile and capable of understanding the subtleties of different misinformation types.
-
-
-
 ## Risks
 | Type | Description | Likelihood | Impact | Mitigation
 |-----------|-----------|-----------|-----------|-----------|
 | Resource  | Resource being copyrighted | High | High | Use publically available api  |
 | Technical | Ai model giving False news | Low | High | Finetune the model more |
 
-## Model info and minimum requirements for it
