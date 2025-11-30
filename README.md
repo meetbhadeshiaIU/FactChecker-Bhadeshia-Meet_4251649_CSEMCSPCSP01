@@ -140,8 +140,6 @@ This involves:
 - **Identifying linguistic patterns, claims, or features linked to fabricated or misleading content**
 - Producing a clear output label such as **“Fake,” “False,” or “Likely Misinformation”**
 
----
-
 #### **2. Ability to Classify a News Text as Correct**
 
 The system should also recognize and label content that aligns with verified facts.  
@@ -150,8 +148,6 @@ This includes:
 - **Comparing statements with known information or trusted sources** (directly or through trained model representation)
 - **Identifying consistency, coherence, and factual alignment**
 - Producing an output label such as **“Correct,” “True,” or “Verified”**
-
----
 
 #### **3. Ability to Ask Questions Through Prompts**
 
@@ -162,8 +158,6 @@ This functionality should allow:
 - **Submitting custom text for analysis**
 - Receiving **clear and actionable responses** from the system
 
----
-
 ### **Non-Functional Requirements**
 
 #### **1. User Interface (UI) Quality**
@@ -173,8 +167,6 @@ Important considerations include:
 
 - A **clean and straightforward layout** for entering news text and viewing classification results  
 - **Visual indicators** (e.g., colors, icons, badges) for easier interpretation of results  
-
----
 
 ### **Safety Requirements**
 
@@ -243,8 +235,6 @@ This rule-based classification, driven by the model’s output, forms the core d
 
 The current system provides a strong foundation for detecting misinformation using semantic NLP techniques. However, several enhancements can significantly improve its accuracy, usability, and real-world applicability. The following points outline potential directions for future development.
 
----
-
 #### **1. Integration of a News API**
 
 A major improvement for the system would be integrating a **News API** to automatically fetch the latest verified articles from reputable news outlets.  
@@ -256,8 +246,6 @@ This addition would allow the system to:
 
 Incorporating a News API enhances the system's ability to stay relevant in an environment where new information emerges rapidly.
 
----
-
 #### **2. Providing Sources for Fact-Checked News**
 
 To increase transparency and user trust, the system can be expanded to **display the sources used for verification**.  
@@ -268,8 +256,6 @@ This means that after evaluating a news text, the tool would also:
 - Offer users a clearer understanding of *why* a particular news item was marked as fake or correct.  
 
 This improvement transforms the system from simply a classifier into a **traceable and explainable fact-checking assistant**.
-
----
 
 #### **3. Teaching users to how to detect fake news**
  
