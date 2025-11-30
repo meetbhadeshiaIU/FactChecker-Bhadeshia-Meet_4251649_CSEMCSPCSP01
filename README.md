@@ -140,8 +140,6 @@ uvicorn                           # for continuously running our server
 - Average speed: **fast**, optimized for CPU and GPU usage.  
 - Known for **state-of-the-art performance** on STS (Semantic Textual Similarity) benchmarks.
 
----
-
 ## **Minimum System Requirements**
 
 This model is **lightweight** and runs on almost any modern machine.
