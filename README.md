@@ -125,7 +125,7 @@ uvicorn                           # for continuously running our server
 1. **Run the backend** from root: python src/ai\ model/main.py
 1. **Start the frontend** from src/frontend/index.html
 
-# **About the Model: `all-mpnet-base-v2`**
+## **About the Model: `all-mpnet-base-v2`**
 
 `all-mpnet-base-v2` is a **Sentence Transformer** model created by **Microsoft** and fine-tuned by the SentenceTransformers team. It is one of the highest-performing general-purpose semantic similarity models.
 
@@ -142,11 +142,11 @@ uvicorn                           # for continuously running our server
 
 ---
 
-# **Minimum System Requirements**
+## **Minimum System Requirements**
 
 This model is **lightweight** and runs on almost any modern machine.
 
-## **Minimum Requirements (CPU Only)**
+### **Minimum Requirements (CPU Only)**
 - **RAM:** 4 GB (8 GB recommended for larger batches)  
 - **CPU:** Any modern dual-core processor  
 - **Storage:** ~500 MB (model + dependencies)  
@@ -155,7 +155,7 @@ This model is **lightweight** and runs on almost any modern machine.
 
 > Running on CPU is fully possible, just slower for large workloads.
 
-## **Recommended Requirements (For Faster Performance)**
+### **Recommended Requirements (For Faster Performance)**
 To achieve fast embedding generation:
 
 - **RAM:** 8–16 GB  
